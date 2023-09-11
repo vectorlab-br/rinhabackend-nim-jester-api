@@ -1,5 +1,5 @@
 # Use the official Nim image from Docker Hub
-FROM nimlang/nim:latest AS build-env
+FROM nimlang/nim:1.6.14 AS build-env
 
 # Install PostgreSQL client library
 RUN apt-get update && apt-get install -y libpq-dev
