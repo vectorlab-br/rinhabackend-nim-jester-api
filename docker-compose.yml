@@ -49,6 +49,7 @@ services:
   postgres: # Banco de dados
     image: docker.io/postgres
     hostname: postgres
+    user: postgres
     environment:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: password
